@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #0084FD;
+    --secondary-color: #9792E4;
+    --lightblue: #B5DDFF;
+    --darkgray: #333333;
+    --text-black: black;
+    --text-white: white;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Akatab', sans-serif;
+}
+
+/*LAYOUT*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+
+
+/*SECTION*/
+
+/*header*/
+
+#header {
+    height: 80px;
+    line-height: 80px;
+}
+
+#header>.container {
+    display: flex;
+    background-color: var(--primary-color);
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+
+/*section-1*/
+
+#section-1 .col {
+    margin: 1rem 0;
+    padding: 0 1rem;
+
+}
+
+#section-1 .card {
+    background-color: var(--lightblue);
+    padding: 2rem;
+    height: 100%;
+
+    border-radius: 20px;
+    text-align: center;
+}
+
+#section-1 .card.lg {
+    padding-bottom: 0;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.app-store {
+    background-color: var(--primary-color);
+    color: white;
+
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+#section-1 .phone-image {
+    width: 75%;
+    margin-top: 1rem;
+}
+
+#section-1 h2 {
+    color: var(--primary-color);
+}
+
+#section-1 p {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+#section-1 .fa-solid {
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+
+/*RESPONSIVE*/
+
+/*tablet*/
+
+/*section-1*/
+
+@media screen and (min-width: 576px) {
+
+    #section-1 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section-1 .col {
+        width: calc(100%/3);
+    }
+
+    #section-1 .col:first-child {
+        width: calc(100%/3*2);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    #section-1 .col:first-child .card {
+        display: flex;
+    }
+
+    #section-1 .card >.card-section {
+        width: 50%;
+    }
+
+
+}
