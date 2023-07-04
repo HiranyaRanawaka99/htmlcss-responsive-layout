@@ -186,6 +186,9 @@ section {
 .testimonials {
     text-align: center;
 }
+.testimonials h2 {
+    color:var(--secondary-color);
+}
 
 .testimonials p {
     margin:1rem ;
@@ -244,8 +247,18 @@ section {
         align-items: center;
     }
 
-    #section-3 p {
+    .content p {
         text-align: left;
+    }
+
+        /*section-4*/
+    #section-4 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section-4 .col {
+        width: calc(100%/2);
     }
 
 
@@ -283,6 +296,11 @@ section {
         width: 50%;
     }
 
+        /*section-4*/
+
+    #section-4 .col{
+        width: calc(100%/3);
+    }
 
 
 }
