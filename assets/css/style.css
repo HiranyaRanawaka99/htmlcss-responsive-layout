@@ -31,6 +31,10 @@ img {
     width:100%;
 }
 
+span {
+    display:inline-block;
+}
+
 /*LAYOUT*/
 .container {
     margin-left: auto;
@@ -305,6 +309,24 @@ section {
 
 }
 
+        /*footer*/
+footer {
+    background-color: var(--darkgray);
+    color: white;
+
+    text-align: center;
+}
+
+#footer p {
+    padding-top: 4rem;
+}
+
+#footer span {
+    color: var(--secondary-color);
+    text-decoration: underline;
+
+    margin-bottom: 2rem;
+}
 
 
 /*RESPONSIVE*/
