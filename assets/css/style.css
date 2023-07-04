@@ -6,6 +6,9 @@
     --text-black: black;
     --text-white: white;
 
+    --base-spacing-grid: 1rem;
+    --big-spacing-grid: 2rem;
+
 }
 
 
@@ -20,6 +23,11 @@ body {
     font-family: 'Akatab', sans-serif;
 }
 
+p {
+    line-height: 1.5rem;
+  }
+
+
 /*LAYOUT*/
 .container {
     margin-left: auto;
@@ -33,18 +41,33 @@ body {
     margin-right: -1rem;
 }
 
+.col {
+    padding: 1rem;
+}
+
+.m-top-2rem {
+    margin-top: 2rem
+}
+
+section:nth-of-type(even) {
+    background-color: var(--secondary-color);
+}
+
+.card {
+    border-radius: 20px;
+}
 
 
 /*SECTION*/
 
-/*header*/
+    /*header*/
 
 #header {
     height: 80px;
     line-height: 80px;
 }
 
-#header>.container {
+#header > .container {
     display: flex;
     background-color: var(--primary-color);
 
@@ -61,11 +84,10 @@ body {
 }
 
 
-/*section-1*/
+    /*section-1*/
 
 #section-1 .col {
     margin: 1rem 0;
-    padding: 0 1rem;
 
 }
 
@@ -74,7 +96,6 @@ body {
     padding: 2rem;
     height: 100%;
 
-    border-radius: 20px;
     text-align: center;
 }
 
@@ -93,21 +114,14 @@ body {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    margin-top: 1rem;
 }
 
 #section-1 .phone-image {
     width: 75%;
-    margin-top: 1rem;
 }
 
 #section-1 h2 {
     color: var(--primary-color);
-}
-
-#section-1 p {
-    line-height: 1.5rem;
-    margin-top: 1rem;
 }
 
 #section-1 .fa-solid {
@@ -115,12 +129,51 @@ body {
     color: var(--primary-color);
 }
 
+  /*section-2*/
+
+  #section-2 {
+    background-color: var(--secondary-color);
+  }
+
+  #section-2 img {
+    width: 100%;
+  }
+
+  #section-2 h1 {
+    color: var(--text-white);
+  }
+
+  #section-2 p {
+    line-height: 1.5rem;
+  }
+
+  .col.top p {
+    color: var(--text-white);
+  }
+
+  .col.bottom > .card {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .arrow-down {
+    display: inline-block;
+    background-color:var(--secondary-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+  }
+
+
+
+
+
 
 /*RESPONSIVE*/
 
-/*tablet*/
+    /*tablet*/
 
-/*section-1*/
+        /*section-1*/
 
 @media screen and (min-width: 576px) {
 
@@ -138,6 +191,10 @@ body {
     }
 }
 
+    /*dekstop*/
+
+        /*section-1*/
+
 @media screen and (min-width: 1000px) {
     .container {
         max-width: 1140px;
@@ -150,6 +207,23 @@ body {
     #section-1 .card >.card-section {
         width: 50%;
     }
+
+        /*section-2*/
+
+    #section-2 .row {
+        display: flex;
+    }
+
+    #section-2 .col {
+        width: 50%;
+    }
+    
+    .col.bottom {
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+    }
+
 
 
 }
