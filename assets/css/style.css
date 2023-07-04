@@ -200,7 +200,13 @@ section {
     color:var(--secondary-color);
 }
 
+.testimonials {
+    text-align: center;
+}
 
+.testimonials p {
+    margin:1rem ;
+}
 
 
 
