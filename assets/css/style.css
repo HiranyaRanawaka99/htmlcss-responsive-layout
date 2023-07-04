@@ -183,7 +183,15 @@ section {
     display: inline-block;
 }
 
-        /*section-3*/
+.testimonials {
+    text-align: center;
+}
+
+.testimonials p {
+    margin:1rem ;
+}
+
+        /*section-4*/
 
 #section-4 .card {
     background-color: white;
@@ -200,13 +208,12 @@ section {
     color:var(--secondary-color);
 }
 
-.testimonials {
+.benefits {
+    color: white;
+    padding:2rem;
     text-align: center;
 }
 
-.testimonials p {
-    margin:1rem ;
-}
 
 
 
