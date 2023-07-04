@@ -70,7 +70,7 @@ section {
 
 
 
-    /*header*/
+    /*Header*/
 
 #header {
     height: 80px;
@@ -93,7 +93,7 @@ section {
     width: 50px;
 }
 
-    /*section-1*/
+    /*Section-1*/
 
 #section-1 .card {
     background-color: var(--lightblue);
@@ -133,7 +133,7 @@ section {
     color: var(--primary-color);
 }
 
-  /*section-2*/
+  /*Section-2*/
 
   #section-2 h1 {
     color: white;
@@ -156,7 +156,7 @@ section {
     border-radius: 50%;
   }
 
-    /*section 3*/
+    /*Section 3*/
 
 #section-3 .card {
     background-color: var(--secondary-color);
@@ -194,7 +194,7 @@ section {
     margin:1rem ;
 }
 
-        /*section-4*/
+        /*Section-4*/
 
 #section-4 .card {
     background-color: white;
@@ -217,6 +217,54 @@ section {
     text-align: center;
 }
 
+    /*Section-5*/
+
+#section-5 h1 {
+    font-size: 3rem;
+    color:var(--secondary-color)
+}
+
+#section-5 p{
+    margin-top: 1rem;
+}
+
+#section-5 img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+/*#section-5 .quote {
+    position: relative;
+}
+
+.quote .fa-quote-left {
+    position:absolute;
+    top:0;
+    right:0;
+
+    font-size: 3rem;
+    color:var(--secondary-color)
+
+}
+
+*/
+
+#section-5 h2 {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+#section-5 span {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.fa-linkedin {
+    padding-right: 0.5rem;
+}
 
 
 
@@ -259,6 +307,18 @@ section {
 
     #section-4 .col {
         width: calc(100%/2);
+    }
+
+        /*section-5*/
+    #section-5 .row {
+        display: flex;
+    }
+
+    #section-5 .col:first-child{
+        width: calc(100%/3*2);
+    }
+    #section-5 .col:last-child{
+        width: calc(100%/3);
     }
 
 
