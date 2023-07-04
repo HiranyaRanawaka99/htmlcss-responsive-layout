@@ -136,11 +136,11 @@ section {
   /*section-2*/
 
   #section-2 h1 {
-    color: var(--text-white);
+    color: white;
   }
 
   .col.top p {
-    color: var(--text-white);
+    color: white;
   }
 
   .col.bottom > .card {
@@ -182,6 +182,24 @@ section {
     width: 50%;
     display: inline-block;
 }
+
+        /*section-3*/
+
+#section-4 .card {
+    background-color: white;
+
+    padding: 1.5rem;
+}
+
+#section-4 h3 {
+    color:var(--secondary-color);
+}
+
+#section-4 .big-font {
+    font-size: 3rem;
+    color:var(--secondary-color);
+}
+
 
 
 
