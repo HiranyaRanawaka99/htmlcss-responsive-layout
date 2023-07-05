@@ -3,14 +3,7 @@
     --secondary-color: #9792E4;
     --lightblue: #B5DDFF;
     --darkgray: #333333;
-    --text-black: black;
-    --text-white: white;
-
-    --base-spacing-grid: 1rem;
-    --big-spacing-grid: 2rem;
-
 }
-
 
 * {
     margin: 0;
@@ -18,13 +11,17 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Akatab', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 3rem;
   }
 
 img {
@@ -52,6 +49,10 @@ span {
     padding: 1rem;
 }
 
+.m-top-4rem {
+    margin-top: 4rem
+}
+
 .m-top-2rem {
     margin-top: 2rem
 }
@@ -74,8 +75,8 @@ section {
     /*Header*/
 
 #header {
-    height: 80px;
-    line-height: 80px;
+    height: 100px;
+    line-height: 100px;
 }
 
 #header > .container {
@@ -83,16 +84,17 @@ section {
     background-color: var(--primary-color);
 
     justify-content: space-between;
-    align-items: center;
 }
+
+#header > img {
+    align-self: center;
+}
+
 
 .fa-bars {
     color: white;
 }
 
-.logo {
-    width: 50px;
-}
 
     /*Section-1*/
 
@@ -144,10 +146,15 @@ section {
 
   #section-2 h1 {
     color: white;
+    margin-top: 7rem;
   }
 
   .col.top p {
     color: white;
+  }
+
+  .p-top-3rem {
+    padding-top: 3rem;
   }
 
   .col.bottom > .card {
@@ -157,10 +164,11 @@ section {
   }
 
   .arrow-down {
-    display: inline-block;
     background-color:var(--secondary-color);
     padding: 0.8rem;
+
     border-radius: 50%;
+    aspect-ratio: 2;
   }
 
     /*Section 3*/
@@ -175,9 +183,10 @@ section {
 
 #section-3 img {
     border-radius: 50%;
+    width: 85%;
+
     aspect-ratio: 1;
     overflow: hidden;
-    width: 85%;
 }
 
 .content p:last-child {
@@ -197,25 +206,28 @@ section {
     color:var(--secondary-color);
 }
 
-.testimonials p {
-    margin:1rem ;
-}
-
         /*Section-4*/
+
+#section-4 .row {
+    padding-bottom: 4rem;
+}
 
 #section-4 .card {
     background-color: white;
 
+    height: 100%;
+
     padding: 1.5rem;
 }
 
-#section-4 h3 {
+#section-4 h3,
+.big-font {
     color:var(--secondary-color);
+    font-weight: bold;
 }
 
 #section-4 .big-font {
     font-size: 3rem;
-    color:var(--secondary-color);
 }
 
 .benefits {
@@ -224,18 +236,24 @@ section {
     text-align: center;
 }
 
+#section-4 .more {
+    background-color: var(--secondary-color);
+    color: white;
+
+    padding: 1rem 4rem;
+    border-radius: 25px;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
     /*Section-5*/
 
 #section-5 h1 {
-    font-size: 3rem;
-    color:var(--secondary-color)
+    color:var(--secondary-color);
+
+    font-size: 3.5rem;
 }
-
-#section-5 p{
-    margin-top: 1rem;
-}
-
-
 
 #section-5 img {
     border-radius: 50%;
@@ -246,10 +264,11 @@ section {
     position: relative;
 }
 
+/*
 .quote .fa-quote-left {
     position:absolute;
     top:-1rem;
-    right:9rem;
+    right:-rem;
     line-height: 1;
 
     font-size: 3rem;
@@ -257,19 +276,18 @@ section {
 
 }
 
-
+*/
 
 #section-5 h2 {
     color: var(--secondary-color);
-    margin-top: 1rem;
 }
+
 #section-5 span {
     display: inline-block;
     background-color: var(--secondary-color);
     color: white;
     padding: 1rem;
     border-radius: 20px;
-    margin-top: 1rem;
 }
 
 .fa-linkedin {
@@ -278,7 +296,7 @@ section {
 
         /*Section-6*/
 
-#section-6 .container {
+#section-62rem.container {
     padding:0 1rem;
 }
 
@@ -286,7 +304,6 @@ section {
     text-align: center;
 }
 #section-6 p {
-    margin-top: 3rem;
     color: white;
 }
 
@@ -296,7 +313,7 @@ section {
 }
 
 #section-6 .simple {
-    font-size:1.8rem; 
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -315,7 +332,9 @@ section {
     padding: 1rem 5rem;
     border-radius: 40px;
     margin-top: 3rem;
-
+}
+#section-6 .privacy {
+    padding-bottom: 3rem;
 }
 
         /*footer*/
@@ -383,6 +402,8 @@ footer {
         /*section-5*/
     #section-5 .row {
         display: flex;
+
+        margin-bottom: 10rem;
     }
 
     #section-5 .col:first-child{
@@ -391,6 +412,22 @@ footer {
     #section-5 .col:last-child{
         width: calc(100%/3);
     }
+
+    /*Section-6*/
+    #section-6 .box{
+        width: 70%;
+        margin: 0 auto
+    }
+
+    /*Footer*/
+
+    #footer .box {
+        width: 70%;
+        margin: 0 auto
+    }
+
+
+
 
 
 }
